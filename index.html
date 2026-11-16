@@ -16,7 +16,7 @@
   <body>
     <div id="progress"></div>
     <main class="container">
-      <header class="header">
+      <header class="header" data-testid="navbar">
         <div class="logo">
           <img class="logo__img" src="./assets/Logo.svg" alt="LaslesVPN logo" />
           <p>Lasles<span>VPN</span></p>
@@ -49,7 +49,7 @@
       <section
         class="section section--two-columns about"
         id="about"
-        data-testid="about"
+        data-testid="hero"
       >
         <div class="section__text">
           <h1 class="section__heading">
@@ -65,7 +65,7 @@
         </div>
         <img src="./assets/about.png" alt="about Illustration" />
       </section>
-      <article class="panel stats">
+      <article class="panel stats" data-testid="stats">
         <div class="statics">
           <img src="./assets/person-icon.svg" alt="" />
           <p><span class="bolder-text">90+</span>Users</p>
@@ -123,7 +123,7 @@
           </p>
         </div>
         <div class="section--three-columns pricing__cards">
-          <div class="card pricing__card">
+          <div class="card pricing__card" data-testid="plan">
             <div class="properties">
               <img src="./assets/Free-plan.png" alt="Free plan image" />
               <h3>Free Plan</h3>
@@ -150,7 +150,7 @@
               <button type="button">Select</button>
             </div>
           </div>
-          <div class="card pricing__card">
+          <div class="card pricing__card" data-testid="plan">
             <div class="properties">
               <img src="./assets/Standard-plan.png" alt="Standard plan image" />
               <h3>Standard Plan</h3>
@@ -180,7 +180,7 @@
               <button type="button">Select</button>
             </div>
           </div>
-          <div class="card pricing__card card--active">
+          <div class="card pricing__card card--active" data-testid="plan">
             <div class="properties">
               <img src="./assets/Premium-plan.png" alt="Premium plan image" />
               <h3>Premium Plan</h3>
@@ -215,11 +215,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="section section--one-column"
-        id="testimonials"
-        data-testid="testimonials"
-      >
+      <section class="section section--one-column" id="testimonials">
         <div class="section__text">
           <h2 class="section__heading">Huge Global Network of Fast VPN</h2>
           <p class="section__description">
@@ -233,7 +229,7 @@
       <section
         class="section section--one-column sponsor"
         id="subscribe"
-        data-testid="subscribe"
+        data-testid="testimonials"
       >
         <div class="section__text">
           <h2 class="section__heading">
@@ -245,7 +241,7 @@
           </p>
         </div>
         <div class="section--three-columns rating__cards">
-          <div class="card rating__card card--active">
+          <div class="card rating__card card--active" data-testid="testimonial">
             <div class="rating__card-heading">
               <div class="rating__customer">
                 <img
@@ -263,7 +259,7 @@
               LaslesVPN always the best”.
             </p>
           </div>
-          <div class="card rating__card">
+          <div class="card rating__card" data-testid="testimonial">
             <div class="rating__card-heading">
               <div class="rating__customer">
                 <img
@@ -280,7 +276,7 @@
               high speed.”.
             </p>
           </div>
-          <div class="card rating__card">
+          <div class="card rating__card" data-testid="testimonial">
             <div class="rating__card-heading">
               <div class="rating__customer">
                 <img
@@ -297,7 +293,7 @@
               virtual private network that has high security.”.
             </p>
           </div>
-          <div class="card rating__card">
+          <div class="card rating__card" data-testid="testimonial">
             <div class="rating__card-heading">
               <div class="rating__customer">
                 <img
@@ -327,7 +323,7 @@
           </div>
         </div>
       </section>
-      <article class="panel subscription">
+      <article class="panel subscription" data-testid="subscribe">
         <div class="left">
           <h2>Subscribe Now for Get Special Features!</h2>
           <p>Let's subscribe with us and find the fun.</p>
@@ -338,7 +334,7 @@
           </button>
         </div>
       </article>
-      <footer class="section section--two-columns footer">
+      <footer class="section section--two-columns footer" data-testid="footer">
         <div class="left">
           <img src="./assets/Logo.svg" alt="lasles Vpn logo" />
           <p>
